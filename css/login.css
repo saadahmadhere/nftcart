@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: var(--gray-400);
 }
@@ -11,7 +17,6 @@ body {
 }
 
 .login form {
-  width: 18.75rem;
   margin: var(--size-8) auto;
   border-radius: var(--size-1);
   padding: var(--size-8);
@@ -54,9 +59,9 @@ hr {
   background-color: #f0a428;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 30rem) {
   .login form {
-    width: 25%;
+    width: 25rem;
   }
 
   .btn_login {
