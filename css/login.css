@@ -1,0 +1,74 @@
+body {
+  color: var(--gray-400);
+}
+
+.logo {
+  margin-right: var(--size-2);
+}
+
+.login {
+  padding-top: var(--size-8);
+}
+
+.login form {
+  width: 18.75rem;
+  margin: var(--size-8) auto;
+  border-radius: var(--size-1);
+  padding: var(--size-8);
+  box-shadow: var(--size-2) var(--size-2) var(--size-4) rgb(109, 108, 108);
+}
+
+.login input {
+  margin-bottom: var(--size-4);
+}
+
+.login .btn {
+  align-self: center;
+  width: 100%;
+}
+
+.btn_login {
+  padding: var(--size-3) var(--size-6);
+}
+
+.login a {
+  margin-top: var(--size-2);
+  align-self: center;
+  transition: 0.5s;
+  color: var(--primary-color);
+}
+
+.login a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--gray-700);
+  margin-top: var(--size-3);
+  margin-bottom: var(--size-3);
+}
+
+.btn_create__acc {
+  background-color: #f0a428;
+}
+
+@media only screen and (min-width: 48rem) {
+  .login form {
+    width: 25%;
+  }
+
+  .btn_login {
+    padding: var(--size-3) var(--size-6);
+  }
+
+  .navbar_links .material-icons {
+    font-size: var(--size-8);
+  }
+
+  .navbar_links {
+    width: 15%;
+    justify-content: space-around;
+  }
+}
