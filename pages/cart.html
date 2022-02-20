@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nftcart | cart</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/nft.ico" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b9c207240a.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Chroma -->
+    <link rel="stylesheet" href="https://chroma-ui.netlify.app/style.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar flex">
+        <div class="logo">
+          <img src="../assets/nftcart-logo.jpg" alt="logo" />
+        </div>
+        <div class="navbar_search flex">
+          <input
+            class="search_box"
+            type="search"
+            placeholder="Search for products here" />
+          <button class="btn">
+            <span class="material-icons outlined">search</span>
+          </button>
+        </div>
+        <ul class="navbar_links flex">
+          <li>
+            <a class="btn btn_primary btn_logout">Logout</a>
+          </li>
+          <li>
+            <div class="icon_badge">
+              <a href="./wishlist.html" class="btn">
+                <span class="material-icons outlined">favorite</span>
+                <div class="badge badge_red badge_wishlist">6</div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon_badge">
+              <a href="#" class="btn">
+                <span class="material-icons outlined">shopping_cart</span>
+                <div class="badge badge_red md">2</div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="navbar_burger flex">
+          <span class="material-icons outlined">menu</span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="h1 gray_title">My Cart</h1>
+      <hr class="hr primary_hr" />
+      <section class="content">
+        <div class="cart">
+          <div class="card card_horizontal">
+            <div class="container_top">
+              <div class="img_card">
+                <img src="../assets/ape-100.jpg" alt="A bored ape" />
+              </div>
+              <div class="heading_card">
+                <h2 class="h2 gray_title">Bored Ape</h2>
+                <h4 class="h4 inline">Rs.5000</h4>
+                <h6 class="h6 txt_strikethrough txt_regular inline">Rs.8000</h6>
+                <p class="txt_sm">(37.5% off)</p>
+              </div>
+            </div>
+            <div class="container_bottom flex_col">
+              <div class="card_amount flex_justify__end">
+                <button>
+                  <span class="material-icons outlined icon">
+                    add_circle_outline
+                  </span>
+                </button>
+                <input class="input" type="number" value="1" />
+                <button>
+                  <span class="material-icons outlined icon">
+                    remove_circle_outline
+                  </span>
+                </button>
+              </div>
+
+              <div class="card_actions flex_row flex_align__center">
+                <div class="action_buttons">
+                  <a class="btn btn_primary btn_sm">Remove from cart</a>
+                </div>
+                <div class="action_icons">
+                  <button>
+                    <span class="material-icons outlined icon">
+                      favorite_border
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card_horizontal">
+            <div class="container_top">
+              <div class="img_card">
+                <img src="../assets/ape-100.jpg" alt="A bored ape" />
+              </div>
+              <div class="heading_card">
+                <h2 class="h2 gray_title">Bored Ape</h2>
+                <h4 class="h4 inline">Rs.5000</h4>
+                <h6 class="h6 txt_strikethrough txt_regular inline">Rs.8000</h6>
+                <p class="txt_sm">(37.5% off)</p>
+              </div>
+            </div>
+            <div class="container_bottom flex_col">
+              <div class="card_amount flex_justify__end">
+                <button>
+                  <span class="material-icons outlined icon">
+                    add_circle_outline
+                  </span>
+                </button>
+                <input class="input" type="number" value="1" />
+                <button>
+                  <span class="material-icons outlined icon">
+                    remove_circle_outline
+                  </span>
+                </button>
+              </div>
+
+              <div class="card_actions flex_row flex_align__center">
+                <div class="action_buttons">
+                  <a class="btn btn_primary btn_sm">Remove from cart</a>
+                </div>
+                <div class="action_icons">
+                  <button>
+                    <span class="material-icons outlined icon">
+                      favorite_border
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart_details">
+          <h2 class="h2">Price details</h2>
+          <hr class="hr" />
+          <div class="price flex">
+            <p class="txt_regular txt_md">Price</p>
+            <p class="txt_regular txt_md">Rs.10000</p>
+          </div>
+          <div class="discount flex">
+            <p class="txt_regular txt_md">Discount</p>
+            <p class="txt_regular txt_md">Rs.6000</p>
+          </div>
+          <div class="other_charges flex">
+            <p class="txt_regular txt_md">Other Charges</p>
+            <p class="txt_regular txt_md">Rs.0</p>
+          </div>
+          <hr class="hr" />
+          <div class="total flex">
+            <p class="txt_bold txt_md">Total</p>
+            <p class="txt_bold txt_md">Rs.10000</p>
+          </div>
+          <hr class="hr" />
+          <button class="btn btn_primary btn_lg">Place order</button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <h3 class="footer_heading">
+        Made with {&#9829;} by
+        <a href="https://saadahmad.netlify.app/">Saad Ahmad</a>
+      </h3>
+      <div class="footer_social">
+        <a href="https://twitter.com/imsaadahmad" target="_blank">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/saadahmadhere/" target="_blank">
+          <i class="fab fa-linkedin-in fa-lg"></i>
+        </a>
+        <a href="https://github.com/saadahmadhere" target="_blank">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </div>
+      <h5>v 1.0.0</h5>
+    </footer>
+  </body>
+</html>
