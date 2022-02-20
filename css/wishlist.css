@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-main {
+.main {
   margin: var(--size-8) auto;
 }
 
-main .h1 {
+.main .h1 {
   text-align: center;
 }
 
@@ -28,14 +28,6 @@ main .h1 {
 
 .btn_logout {
   padding: var(--size-3) var(--size-6);
-}
-
-@media only screen and (min-width: 30rem) {
-  .wishlist {
-    grid-template-columns: auto auto;
-    grid-row-gap: 50px;
-    grid-column-gap: 10px;
-  }
 }
 
 /* footer */
@@ -61,6 +53,14 @@ main .h1 {
 
 .footer_social > *:hover {
   color: var(--alert-primary);
+}
+
+@media only screen and (min-width: 30rem) {
+  .wishlist {
+    grid-template-columns: auto auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+  }
 }
 
 @media only screen and (min-width: 49rem) {
