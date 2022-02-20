@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+.logo {
+  margin-right: var(--size-2);
+}
+
+.btn_logout {
+  padding: var(--size-3) var(--size-6);
+}
+
+.icon_badge .btn .badge {
+  height: var(--size-5);
+  width: var(--size-5);
+  top: -20%;
+  right: 0;
+}
+
+/* main */
+.main {
+  display: grid;
+}
+
+/* aside */
+.aside {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  padding: var(--size-2) var(--size-4);
+  border-bottom: 1px solid var(--gray-100);
+}
+.products {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+}
+
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--size-6);
+  margin-bottom: var(--size-4);
+}
+
+.filter {
+  justify-content: space-between;
+}
+
+.category,
+.price,
+.rating,
+.sort {
+  display: none;
+}
+
+/* products */
+.product_title {
+  margin: var(--size-4) var(--size-1) var(--size-8) var(--size-4);
+}
+
+/* footer */
+#footer {
+  background-color: var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 20vh;
+  color: var(--gray-800);
+}
+
+.footer_social {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_social > * {
+  margin-left: var(--size-3);
+}
+
+.footer_social > *:hover {
+  color: var(--alert-primary);
+}
+
+@media only screen and (min-width: 49rem) {
+  .main {
+    grid-template-columns: 18.75rem auto;
+  }
+
+  .aside {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    max-height: 100vh;
+    padding-left: var(--size-8);
+    padding-right: var(--size-4);
+    border-right: 1px solid var(--gray-100);
+    position: sticky;
+    top: 0;
+  }
+
+  .aside > * {
+    margin-top: var(--size-8);
+  }
+
+  .category,
+  .price,
+  .rating,
+  .sort {
+    display: block;
+  }
+
+  .category > *,
+  .price > *,
+  .rating > *,
+  .sort > * {
+    margin-top: var(--size-2);
+  }
+
+  .products {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    padding-bottom: var(--size-16);
+  }
+
+  .product_title {
+    margin: var(--size-5) var(--size-12) var(--size-8);
+  }
+
+  .product_list {
+    align-self: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .navbar_links .material-icons {
+    font-size: var(--size-8);
+  }
+
+  .navbar_links {
+    width: 15%;
+    justify-content: space-around;
+  }
+
+  .price .range_slider {
+    width: 100%;
+  }
+}
