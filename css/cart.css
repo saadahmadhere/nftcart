@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  padding: var(--size-6);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  margin-bottom: var(--size-4);
+}
+
+.cart_details {
+  border: 1px solid var(--gray-100);
+  border-radius: var(--size-1);
+  padding: var(--size-4);
+  color: var(--gray-200);
+}
+
+.cart_details .btn {
+  margin-left: auto;
+}
+
+.main {
+  margin: var(--size-8) auto;
+}
+
+.main .h1 {
+  text-align: center;
+}
+
+.hr {
+  margin-top: var(--size-2);
+  margin-bottom: var(--size-2);
+}
+.primary_hr {
+  margin-top: var(--size-8);
+  margin-bottom: var(--size-8);
+}
+
+.logo {
+  margin-right: var(--size-2);
+}
+
+.btn_logout {
+  padding: var(--size-3) var(--size-6);
+}
+
+.icon_badge .btn .badge {
+  height: var(--size-5);
+  width: var(--size-5);
+  top: -20%;
+  right: 0;
+}
+
+.heading_card > * {
+  margin-top: var(--size-2);
+}
+
+.card_amount .input {
+  width: var(--size-10);
+  padding: var(--size-2);
+  border: 1px solid var(--gray-100);
+  margin: var(--size-2);
+}
+
+.container_bottom > * {
+  width: 100%;
+}
+
+.card_actions,
+.price,
+.discount,
+.other_charges,
+.total {
+  justify-content: space-between;
+}
+
+.price,
+.discount,
+.other_charges {
+  margin-bottom: var(--size-4);
+}
+
+/* footer */
+#footer {
+  background-color: var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 20vh;
+  color: var(--gray-800);
+}
+
+.footer_social {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_social > * {
+  margin-left: var(--size-3);
+}
+
+.footer_social > *:hover {
+  color: var(--alert-primary);
+}
+
+@media only screen and (min-width: 49rem) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+  .main {
+    width: 90%;
+  }
+  .navbar_links .material-icons {
+    font-size: var(--size-8);
+  }
+
+  .navbar_links {
+    width: 15%;
+    justify-content: space-around;
+  }
+}
