@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.logo_text {
+  font-size: var(--size-10);
+  font-style: italic;
+}
+
+.logo {
+  margin-right: var(--size-2);
+}
+
 .main {
   margin: var(--size-8) auto;
 }
@@ -26,10 +35,12 @@
   margin-right: var(--size-2);
 }
 
-.btn_logout {
-  padding: var(--size-3) var(--size-6);
+.icon_badge .btn .badge {
+  height: var(--size-5);
+  width: var(--size-5);
+  top: -20%;
+  right: 0;
 }
-
 /* footer */
 #footer {
   background-color: var(--gray-300);
