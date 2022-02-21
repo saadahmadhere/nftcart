@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nftcart</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/nft.ico" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b9c207240a.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Chroma -->
+    <link rel="stylesheet" href="https://chroma-ui.netlify.app/style.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar flex">
+        <div class="logo">
+          <a href="#">
+            <h1 class="h1 logo_text txt_boldest">nftcart</h1>
+          </a>
+        </div>
+        <div class="navbar_search flex">
+          <input
+            class="search_box"
+            type="search"
+            placeholder="Search for products here" />
+          <button class="btn">
+            <span class="material-icons outlined">search</span>
+          </button>
+        </div>
+        <ul class="navbar_links flex">
+          <li>
+            <a
+              href="./pages/login.html"
+              class="btn btn_primary btn_logout btn_sm">
+              Login
+            </a>
+          </li>
+          <li>
+            <a
+              href="./pages/signup.html"
+              class="btn btn_outline btn_logout btn_sm">
+              Signup
+            </a>
+          </li>
+
+          <li>
+            <div class="icon_badge">
+              <a href="./pages/wishlist.html" class="btn">
+                <span class="material-icons outlined">favorite</span>
+                <div class="badge badge_red badge_wishlist">6</div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon_badge">
+              <a href="./pages/cart.html" class="btn">
+                <span class="material-icons outlined">shopping_cart</span>
+                <div class="badge badge_red md">2</div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="navbar_burger flex">
+          <span class="material-icons outlined">menu</span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main flex_align__center">
+      <div class="main_heading flex_col">
+        <h1 class="h1 gray_title txt_bold">
+          Welcome to the
+          <span class="brand_text">nft</span>
+          marketplace
+        </h1>
+        <a href="./pages/product.html" class="btn txt_lg">View Products</a>
+      </div>
+      <div class="main_pic flex_justify__center">
+        <img src="./assets/landing.jpg" alt="An nft" class="img_responsive" />
+      </div>
+    </main>
+
+    <section class="categories flex_col flex_align__center">
+      <h1 class="h1">Featured Categories</h1>
+      <hr class="hr" />
+      <div class="category_items flex">
+        <div class="category_nft">
+          <img class="block" src="./assets/nft_art.jpg" alt="nft_art" />
+          <div class="overlay flex_justify__center flex_align__center">
+            <h3 class="h3">Art</h3>
+          </div>
+        </div>
+        <div class="category_nft">
+          <img
+            src="./assets/nft_collectibles.jpg"
+            class="block"
+            alt="nft_collectibles" />
+          <div class="overlay flex_justify__center flex_align__center">
+            <h3 class="h3">Collectibles</h3>
+          </div>
+        </div>
+        <div class="category_nft">
+          <img src="./assets/nft_sports.jpg" class="block" alt="nft_sports" />
+          <div class="overlay flex_justify__center flex_align__center">
+            <h3 class="h3">Sports</h3>
+          </div>
+        </div>
+        <div class="category_nft">
+          <img
+            src="./assets/nft_photo.jpg"
+            class="block"
+            alt="nft_photography" />
+          <div class="overlay flex_justify__center flex_align__center">
+            <h3 class="h3">Photography</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new_arrivals flex_col flex_align__center">
+      <h1 class="h1 gray_title">New Arrivals</h1>
+      <hr class="hr" />
+      <div class="new_items flex">
+        <div class="arrival_nft">
+          <img
+            class="img_responsive"
+            src="./assets/new_arr_1.jpg"
+            alt="new item" />
+        </div>
+        <div class="arrival_nft">
+          <img
+            class="img_responsive"
+            src="./assets/new_arr_2.jpg"
+            alt="new item" />
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="flex_col">
+      <h3 class="footer_heading">
+        Made with {&#9829;} by
+        <a href="https://saadahmad.netlify.app/">Saad Ahmad</a>
+      </h3>
+      <div class="footer_social">
+        <a href="https://twitter.com/imsaadahmad" target="_blank">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/saadahmadhere/" target="_blank">
+          <i class="fab fa-linkedin-in fa-lg"></i>
+        </a>
+        <a href="https://github.com/saadahmadhere" target="_blank">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </div>
+      <h5>v 1.0.0</h5>
+    </footer>
+  </body>
+</html>
