@@ -1,4 +1,4 @@
-<h1">nftcart</h1>
+<h1>nftcart</h1>
 <h2 >An e-commerce for all your nft needs.</p>
 
 ---
