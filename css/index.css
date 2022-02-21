@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+.logo {
+  margin-right: var(--size-2);
+}
+
+.logo_text {
+  font-size: var(--size-10);
+  font-style: italic;
+}
+
+.icon_badge .btn .badge {
+  height: var(--size-5);
+  width: var(--size-5);
+  top: -20%;
+  right: 0;
+}
+
+/* main */
+.main {
+  height: 90vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.main,
+.categories,
+.new_arrivals {
+  margin-bottom: var(--size-4);
+}
+
+.h1 {
+  text-align: center;
+}
+
+.main .h1 {
+  font-size: calc(1rem + 3.3vw);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.main > * {
+  flex: auto;
+}
+
+.main_heading {
+  align-items: center;
+  justify-content: center;
+}
+
+.main_pic {
+  padding: var(--size-4);
+}
+
+.brand_text {
+  color: var(--primary-color);
+}
+
+.main_heading .btn {
+  background-color: #f0a428;
+  margin-top: var(--size-4);
+  width: 50%;
+  font-size: var(--size-4);
+  padding: var(--size-3) var(--size-5);
+}
+
+.main_heading .btn:hover {
+  width: 60%;
+}
+
+.category_items,
+.new_items {
+  margin-top: var(--size-8);
+  flex-wrap: wrap;
+  gap: var(--size-8);
+  justify-content: center;
+}
+
+.category_nft {
+  position: relative;
+  border-radius: var(--size-2);
+}
+
+.category_nft .overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(234, 234, 236, 0.6);
+  transition: 0.5s;
+}
+
+.category_nft .overlay:hover {
+  transform: scale(1.15);
+}
+
+.overlay .h3 {
+  color: var(--gray-100);
+}
+
+.categories .hr,
+.new_arrivals .hr {
+  border: none;
+  border-top: var(--size-2) solid var(--primary-color);
+  margin: var(--size-3) auto;
+  width: 15%;
+}
+
+/* footer */
+#footer {
+  background-color: var(--gray-300);
+  align-items: center;
+  justify-content: space-evenly;
+  height: 20vh;
+  color: var(--gray-800);
+}
+
+.footer_social {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_social > * {
+  margin-left: var(--size-3);
+}
+
+.footer_social > *:hover {
+  color: var(--alert-primary);
+}
+
+@media only screen and (min-width: 49rem) {
+  .navbar_links .material-icons {
+    font-size: var(--size-7);
+  }
+
+  .navbar_links {
+    width: 20%;
+    justify-content: space-around;
+  }
+
+  .main {
+    padding-right: var(--size-8);
+    padding-left: var(--size-12);
+    flex-direction: row;
+  }
+
+  .main > * {
+    flex: 1;
+  }
+
+  .main_heading .btn {
+    width: 60%;
+    font-size: var(--size-5);
+  }
+
+  .main_heading .btn:hover {
+    width: 80%;
+  }
+  .categories .h1,
+  .new_arrivals .h1 {
+    font-size: calc(1rem + 2.1vw);
+    margin-top: var(--size-16);
+  }
+  .categories {
+    height: 60vh;
+    color: var(--gray-800);
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(13, 139, 243, 0.8),
+      rgba(105, 188, 255, 0.8)
+    );
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  }
+}
