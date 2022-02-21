@@ -60,11 +60,25 @@ body {
   cursor: pointer;
 }
 
-hr {
+.login_pwd {
+  position: relative;
+}
+
+.login_pwd .visibility {
+  position: absolute;
+  right: 3%;
+  top: 45%;
+}
+
+.hr {
   border: none;
   border-top: 2px solid var(--gray-700);
   margin-top: var(--size-3);
   margin-bottom: var(--size-3);
+}
+
+.btn_icon:hover {
+  cursor: pointer;
 }
 
 .btn_create__acc {
