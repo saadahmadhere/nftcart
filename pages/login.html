@@ -19,7 +19,9 @@
     <header>
       <nav class="navbar flex">
         <div class="logo">
-          <img src="../assets/nftcart-logo.jpg" alt="logo" />
+          <a href="../index.html">
+            <h1 class="h1 logo_text txt_boldest">nftcart</h1>
+          </a>
         </div>
         <div class="navbar_search flex">
           <input
@@ -32,27 +34,23 @@
         </div>
         <ul class="navbar_links flex">
           <li>
-            <a class="btn btn_outline btn_login">Login</a>
+            <a href="./signup.html" class="btn btn_outline btn_sm">Signup</a>
           </li>
           <li>
-            <a class="navbar_cart">
-              <div class="icon_badge">
-                <button class="btn">
-                  <span class="material-icons outlined">favorite</span>
-                  <div class="badge badge_red md">0</div>
-                </button>
-              </div>
-            </a>
+            <div class="icon_badge">
+              <a href="./wishlist.html" class="btn">
+                <span class="material-icons outlined">favorite</span>
+                <div class="badge badge_red badge_wishlist">6</div>
+              </a>
+            </div>
           </li>
           <li>
-            <a class="navbar_cart">
-              <div class="icon_badge">
-                <button class="btn">
-                  <span class="material-icons outlined">shopping_cart</span>
-                  <div class="badge badge_red md">0</div>
-                </button>
-              </div>
-            </a>
+            <div class="icon_badge">
+              <a href="./cart.html" class="btn">
+                <span class="material-icons outlined">shopping_cart</span>
+                <div class="badge badge_red md">2</div>
+              </a>
+            </div>
           </li>
         </ul>
         <div class="navbar_burger flex">
@@ -73,21 +71,35 @@
           placeholder="abc@example.com"
           class="input block"
           required />
-        <label for="password" class="label gray_title field_required" required>
-          Password
-        </label>
-        <input
-          type="password"
-          id="password"
-          class="input block"
-          placeholder="Your password here..."
-          required />
+        <div class="login_pwd">
+          <label
+            for="password"
+            class="label gray_title field_required"
+            required>
+            Password
+          </label>
+          <input
+            type="password"
+            id="password"
+            class="input block"
+            placeholder="Your password here..."
+            required />
+          <a class="btn_icon">
+            <span class="material-icons outlined visibility">
+              visibility_off
+            </span>
+          </a>
+        </div>
+        <div class="remember_me">
+          <input type="checkbox" id="check_box" />
+          <label for="check_box">Remember me</label>
+        </div>
         <button class="btn btn_primary btn_sm txt_semibold">Login</button>
-        <a class="txt_sm">Forgotten Password?</a>
-        <hr />
-        <button class="btn btn_create__acc btn_sm txt_semibold">
+        <a class="txt_sm forgot_pwd">Forgotten Password?</a>
+        <hr class="hr" />
+        <a href="./signup.html" class="btn btn_create__acc btn_sm txt_semibold">
           Create New Account
-        </button>
+        </a>
       </form>
     </main>
   </body>
